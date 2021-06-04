@@ -117,8 +117,7 @@ void mostrarPoli( POLI * polinom){
 }
 
 void copiarPoli(POLI *poli1, POLI *poli2){
-    if(poli1->inicio != NULL){
-        Monomio *atual = poli1->inicio;
+    Monomio *atual = poli1->inicio;
         
         while(atual != NULL){
 
@@ -146,7 +145,7 @@ void copiarPoli(POLI *poli1, POLI *poli2){
 
         }
     }
-}
+
 
 void somarPoli( POLI *p1, POLI *p2, POLI *p_soma){
     Monomio *atual_p1 = p1->inicio;
